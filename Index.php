@@ -12,6 +12,7 @@
 <form action="Index.php" method="post">  
 <h1>Colours Quiz</h1>
 <?php
+	$total = 0;
 //Questions and choices
 $Quiz = array
 (
@@ -81,7 +82,7 @@ for($r = $row*4; $r < ($row+1)*4; $r++){
 
 if(isset($_POST['submit'])){
 
-$total = 0;
+
 
 		if(isset($_POST['0'])){
 			if($_POST['0'] == 3){
@@ -189,8 +190,24 @@ $total = 0;
 			$total++;
 			}
 		}
+	
+}
+
+
+echo "<h3> Your score is:"."<br>"."$total"."/20 </h3>";
+
+
+ if($total >= 0 && $total <= 5){
+	echo "<h3> Try again </h3>";
+}
+else if($total >=6 && $total <= 10){
+	echo "<h3> Good, but you can do better. </h3>";
+}
+else if($total >= 11 && $total <= 20){
+	echo "<h3> Good job!</h3>";
 }
 ?>
+
 
 <br>
 
@@ -200,9 +217,7 @@ $total = 0;
 	</section>
 	</form>
 	<br>
-<?php
-echo "<h3> Your score is:"."<br>"."$total"."/20 </h3>";
-?>
+
     
 </body>
 </html>
