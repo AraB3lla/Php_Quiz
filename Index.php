@@ -1,16 +1,29 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Quiz</title>
 </head>
-<body>
+<body style="text-align: center;" style='background-image: url("images/art.jpg");'>
 
+<nav class="navbar navbar-dark bg-dark" style="width: 100%;">
+      <h1><a class="navbar-brand" style="color: red;"> Quizzes 4 Kids</a></h1>
+      <form class="form-inline">
+         <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search" >
+         <button class="btn btn-outline-success my-2 my-sm-0" style="color: red;" type="submit">More Quizzes</button>
+      </form>
+   </nav>
+<br><br>
 <form action="Index.php" method="post">  
-<h1>Colours Quiz</h1>
+
 <?php
 	$total = 0;
 //Questions and choices
@@ -101,92 +114,92 @@ if(isset($_POST['submit'])){
 			}
 		}
 		if(isset($_POST['3'])){
-			if($_POST['2'] == 3){
+			if($_POST['3'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['4'])){
-			if($_POST['2'] == 3){
+			if($_POST['4'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['5'])){
-			if($_POST['2'] == 3){
+			if($_POST['5'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['6'])){
-			if($_POST['2'] == 3){
+			if($_POST['6'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['7'])){
-			if($_POST['2'] == 3){
+			if($_POST['7'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['8'])){
-			if($_POST['2'] == 3){
+			if($_POST['8'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['9'])){
-			if($_POST['2'] == 3){
+			if($_POST['9'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['10'])){
-			if($_POST['2'] == 3){
+			if($_POST['10'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['11'])){
-			if($_POST['2'] == 3){
+			if($_POST['11'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['12'])){
-			if($_POST['2'] == 3){
+			if($_POST['12'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['13'])){
-			if($_POST['2'] == 3){
+			if($_POST['13'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['14'])){
-			if($_POST['2'] == 3){
+			if($_POST['14'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['15'])){
-			if($_POST['2'] == 3){
+			if($_POST['15'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['16'])){
-			if($_POST['2'] == 3){
+			if($_POST['16'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['17'])){
-			if($_POST['2'] == 3){
+			if($_POST['17'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['18'])){
-			if($_POST['2'] == 3){
+			if($_POST['18'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['19'])){
-			if($_POST['2'] == 3){
+			if($_POST['19'] == 3){
 			$total++;
 			}
 		}
 		if(isset($_POST['20'])){
-			if($_POST['2'] == 3){
+			if($_POST['20'] == 3){
 			$total++;
 			}
 		}
